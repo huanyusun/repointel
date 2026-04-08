@@ -1,0 +1,10 @@
+[package]
+name = "ci-search"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+ci-graph = { path = "../ci-graph" }
+serde.workspace = true

@@ -1,0 +1,11 @@
+[package]
+name = "ci-agent"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+ci-graph = { path = "../ci-graph" }
+ci-search = { path = "../ci-search" }
+serde.workspace = true

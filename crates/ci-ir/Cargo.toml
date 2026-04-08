@@ -1,0 +1,12 @@
+[package]
+name = "ci-ir"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+camino.workspace = true
+indexmap.workspace = true
+serde.workspace = true
+sha2.workspace = true

@@ -1,0 +1,30 @@
+[package]
+name = "ci-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[[bin]]
+name = "repointel"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+camino.workspace = true
+clap.workspace = true
+ci-agent = { path = "../ci-agent" }
+ci-graph = { path = "../ci-graph" }
+ci-ir = { path = "../ci-ir" }
+ci-loader = { path = "../ci-loader" }
+ci-parser-native = { path = "../ci-parser-native" }
+ci-resolver = { path = "../ci-resolver" }
+ci-search = { path = "../ci-search" }
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+assert_cmd.workspace = true
+predicates.workspace = true
+tempfile.workspace = true
